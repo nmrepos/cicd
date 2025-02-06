@@ -17,7 +17,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_subtract_minus1_and_1(self):
         calculator = Calculator()
-        self.assertAlmostEqual(calculator.subtract(-1, 1), -3)   
+        self.assertAlmostEqual(calculator.subtract(-1, 1), -2)   
 
 if __name__ == '__main__':
     unittest.main()
