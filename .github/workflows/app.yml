@@ -28,4 +28,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest lab01/test_calculator.py
+          pytest Calculator/test.py
