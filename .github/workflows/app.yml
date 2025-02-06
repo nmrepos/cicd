@@ -24,9 +24,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
+          pip install pytest pylint
 
       - name: Run tests
         run: |
           pytest Calculator/test.py
-          pytest Calculator/statictest.py
+
+      - name: Run Pylint
+        run: |
+          pylint --max-line-length=120 --disable=R,C pytest Calculator/test.py
