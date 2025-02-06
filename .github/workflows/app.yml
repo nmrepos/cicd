@@ -29,3 +29,4 @@ jobs:
       - name: Run tests
         run: |
           pytest Calculator/test.py
+          pytest Calculator/statictest.py
