@@ -11,5 +11,13 @@ class TestCalculator(unittest.TestCase):
         calculator = Calculator()
         self.assertAlmostEqual(calculator.add(-1, 1), 0)
 
+    def test_subtract_1_and_1(self):
+        calculator = Calculator()
+        self.assertAlmostEqual(calculator.subtract(1, 1), 0) 
+
+    def test_subtract_minus1_and_1(self):
+        calculator = Calculator()
+        self.assertAlmostEqual(calculator.subtract(-1, 1), -2)   
+
 if __name__ == '__main__':
     unittest.main()
